@@ -1,0 +1,159 @@
+
+/* Your app styles here */
+.red{color:red !important; font-weight:100; font-size:14px;}
+.green{color:green !important; font-weight:100; font-size:14px;}
+
+.md .login-screen-title {
+
+    font-size: 24px;
+
+}
+
+.home.block-title{margin-top:140px}
+.toolbar-inner {
+}
+
+.text-center{text-align:center}
+.text-right{text-align:right}
+.text-left{text-align:left}
+.text-justify{text-align:justify}
+
+h3.appFullName{margin-bottom:5px;}
+span.appWallet{font-weight:200; font-size:24px}
+.active-trip h2{margin-bottom:0px;}
+.tmr{font-size:20px; font-weight:200; color:green}
+.my-list {margin-top:0px !important;}
+.my-list ul li{padding:14px 0; border-bottom:1px #ddd solid}
+
+.pimg{margin: 0 auto; width: 80px; position:relative; height:80px; border-radius:50%; background-position:center; background-size:cover; background-color:blue; -webkit-box-shadow:0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24);box-shadow:0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24)}
+.mxcc{color:#777}
+.mxcc span, .mxcc strong{color:#333}
+.phonehd{display:none}
+.gradb{padding:20px 0 30px;margin-bottom:30px; border-bottom:1px #aaa solid}
+.hidden{display:none}
+
+.authtop{
+	text-align:center;
+	margin-bottom:30px;
+	background-image: linear-gradient(blue, #0d32ad);
+	padding-bottom:20px;
+	border-bottom-left-radius:70%;
+	border-bottom-right-radius:70%;
+}
+
+
+.hometop{
+	color:#fff;
+	min-height:130px;
+	padding:20px;
+	background-image: linear-gradient(#0d32ad, blue);
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 72%);
+	text-align:right;
+}
+.hometop1{
+	color:#fff;
+	min-height:100px;
+	padding:20px;
+	background-image: linear-gradient(#0d32ad, blue);
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 72%);
+	position:fixed;
+	z-index:111;
+	top:0;
+	left:0;
+	right:0;
+}
+.space{
+	height:140px;
+}
+
+.space1{
+	height:170px;
+}
+
+.shadow{
+}
+.card-expandable {
+	height: 100px;
+	}
+.bl{
+	background-color:#5555ff;
+	color:#fff;
+}
+.bl1{
+	background-color:#ff55ff;
+	color:#fff;
+}
+.bl2{
+	background-color:#55ff55;
+	color:#fff;
+}
+.bl3{
+	background-color:#a55fff;
+	color:#fff;
+}
+.p-top{
+	padding-top:32px;
+}
+.list ul {
+    background: transparent;
+}
+.proimage{
+	height:80px;
+	width:80px;
+	border-radius:50%;
+	background-color:#fff;
+	border:3px #fff solid;
+	margin:0 auto;
+	padding:1px;
+	background-position:center center;
+	background-size:cover;
+	background-image:url(../img/user.png);
+}
+.setimage{
+	height:80px;
+	width:80px;
+	border-radius:50%;
+	background-color:#fff;
+	border:1px #888 solid;
+	padding:1px;
+	background-position:center center;
+	background-size:cover;
+	background-image:url(../img/user.png);
+	margin:20px auto;
+}
+.fullName{font-size:17px; display:block; margin-top:10px; margin-bottom:4px;}
+.userName{font-size:16px;}
+.walletBalance{font-size:16px; font-weight:900;}
+.newtop{
+	text-shadow: 1px 0px 8px #060202;
+	color: #FFFFFF;		
+	text-align:center;
+	background-color:#000;
+	padding:20px 10px;
+	color:#fff;
+	min-height:150px;
+	background-image:url(../img/home.jpg);
+	background-position:center;
+	background-size:cover;
+ }
+.login-button{
+	display:block;
+}
+
+.feature_sect{
+	overflow: auto;
+	padding:10px 3px;
+	white-space: nowrap;
+}
+.feature_sect img{
+	box-shadow:1px 0px 3px rgba(6,2,2,0.42);
+	height:120px;
+	margin-right:15px;
+	display:inline-block;
+}
+.block-footer a{
+	color:blue;
+}
+.hidden{
+	display:none;
+}
