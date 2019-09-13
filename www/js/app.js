@@ -22,6 +22,10 @@ var app  = new Framework7({
       app.dialog.alert('Hello World!');
     },
   },
+	view: {
+		pushState :true,
+		stackPages: true,            
+	},
   // App routes
   routes: routes,
 });
@@ -33,6 +37,11 @@ var mainView = app.views.create('.view-main', {
 
 //Set for URL
 var formURL = 'https://www.gopaxy.com/app1';
+
+document.addEventListener('backbutton', backPressed, false);
+function backPressed(){
+        window.history.back();
+}
 
 function nformat(x){
   var parts = x.toString().split(".");
@@ -46,7 +55,6 @@ function loadlist(userID){
     //localStorage.tripList = data;
 	//$$('.triplist').html(data); });	
 }
-
 
 function trans(){
 	var reqst = 'trans';
@@ -133,9 +141,9 @@ function changepassword(){
 
 
 function loadContent(){
-	//$$('.appFullName').text(localStorage.appFullName);
+	$$('.appFullName').text(localStorage.appFullName);
 	$$('.appWallet').text('₦' + nformat(localStorage.appWallet));
-	//$$('.appUserName').text(localStorage.appUserName);
+	$$('.appUserName').text(localStorage.appUserName);
 	//$$('.appUserEmail').text(localStorage.appUserEmail);
 	//$$('.appUserPhone').text(localStorage.appUserPhone);
 }
@@ -154,8 +162,7 @@ $$(document).on('page:init', '.page[data-name="wallet"]', function (e) {
   });
 
 $$(document).on('page:init', '.page[data-name="pay"]', function (e) {
-	payWithPaystack();
-  
+	payWithPaystack(); 
   });
 
 function payWithPaystack(){
@@ -303,12 +310,7 @@ app.request.get(formURL, {req: reqst, user: username, pass: password}, function 
 	$$('.loginStat').html('');
 	app.preloader.hide();
 	
-  
-  
-  (function loopingFunction() {
-    loadlist(localStorage.appUserID);
-    setTimeout(loopingFunction, 3000);
-})();	
+
 
 }
   else{	
@@ -327,30 +329,45 @@ app.request.get(formURL, {req: reqst, user: username, pass: password}, function 
 
 // Verify Phone Number
 $$('#phone-verify .verify-button').on('click', function () {
-  var mobile = $$('#reg-screen [name="phone"]').val();
-  var username = $$('#reg-screen [name="username"]').val();
-  var password = $$('#reg-screen [name="password"]').val();
-  var reqst = 'register';
+  var mobile = $$('#phone-verify [name="phone"]').val();
+  var code = $$('#phone-verify [name="code"]').val();
+  var reqst = 'verifyphone';
   
-if(mobile != '' && username != '' && password != ''){
+if(mobile != '' && code != ''){
  app.preloader.show();
   
-app.request.get(formURL, {req: reqst, phone: mobile, user: username, pass: password}, function (data) {
+app.request.get(formURL, {req: reqst, phone: mobile, dcode: code}, function (data) {
 	data = JSON.parse(data);
  //app.dialog.alert(data.status);
   if(data.status == 'failed'){
-	$$('.regStat').html('<span class="red">'+ data.error +'</span>');	
+	$$('.verifyStat').html('<span class="red">'+ data.error +'</span>');	
 	app.preloader.hide();
   }
 	else if(data.status == 'success'){
-  //redirect to login
-	$$('.verifyStat').html('<span class="green">'+ data.message +'</span>');
-	$$('#reg-screen').hide();
-	$$('#phone-verify').show();
-	app.preloader.hide();	
+		
+		
+  //Log user in ...  redirect to homepage
+
+	$$('#phone-screen').hide();
+	$$('.loginface').show();
+
+	$$('.view-main, .panel').show();
+	localStorage.loginstatus = "true";
+    localStorage.appFullName = data.fullName;
+    localStorage.appWallet = data.wallet;
+    localStorage.appUserName = data.userName;
+    localStorage.appUserEmail = data.email;
+    localStorage.appUserPhone = data.phone;
+    localStorage.appUserID = data.userID;
+	app.loginScreen.close('#my-login-screen');	
+	loadContent();
+	$$('.loginStat').html('');
+	app.preloader.hide();
+	
+	
 }
   else{	
-	$$('.regStat').html('<span class="red">Error! Unknown Error!</span>');	
+	$$('.verifyStat').html('<span class="red">Error! Unknown Error!</span>');	
 	app.preloader.hide();
 } 
   
@@ -380,10 +397,20 @@ app.request.get(formURL, {req: reqst, phone: mobile, user: username, pass: passw
   }
 	else if(data.status == 'success'){
   //redirect to login
-	$$('.verifyStat').html('<span class="green">'+ data.message +'</span>');
+  
+	localStorage.veriPhone = mobile;
+	$$('#reg-screen [name="phone"]').val('');
+	$$('#reg-screen [name="username"]').val('');
+	$$('#reg-screen [name="password"]').val('');
+  
+	//$$('.verifyStat').html('<span class="green">'+ data.message +'</span>');
 	$$('#reg-screen').hide();
 	$$('#phone-verify').show();
+	
+	$$('#phone-verify [name="phone"]').val(mobile);
 	app.preloader.hide();	
+	
+	
 }
   else{	
 	$$('.regStat').html('<span class="red">Error! Unknown Error!</span>');	
@@ -430,13 +457,3 @@ app.request.get(formURL, {req: reqst, user: userid}, function (data) {
 }, {dataType: 'json'});
 }
 });
-
-  PaystackPop.setup({
-   key: 'pk_test_e953822127e2304620428f17063afd68e39779f0',
-   email: 'hezzbyte@gmail.com',
-   amount: 10000,
-   container: 'paystackEmbedContainer',
-   callback: function(response){
-        alert('successfully subscribed. transaction ref is ' + response.reference);
-    },
-  });

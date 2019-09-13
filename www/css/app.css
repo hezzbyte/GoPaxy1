@@ -3,12 +3,6 @@
 .red{color:red !important; font-weight:100; font-size:14px;}
 .green{color:green !important; font-weight:100; font-size:14px;}
 
-.md .login-screen-title {
-
-    font-size: 24px;
-
-}
-
 .home.block-title{margin-top:140px}
 .toolbar-inner {
 }
@@ -35,12 +29,38 @@ span.appWallet{font-weight:200; font-size:24px}
 .authtop{
 	text-align:center;
 	margin-bottom:30px;
-	background-image: linear-gradient(blue, #0d32ad);
+	padding-top:100px;
 	padding-bottom:20px;
-	border-bottom-left-radius:70%;
-	border-bottom-right-radius:70%;
-}
+	/*background-image:url(../img/head.png);*/
+	background-size:contain;
+	background-position:center top;
+	background-repeat:no-repeat;
+	font-size: 20px;
+	color:#fff;
 
+}
+.login-screen label, .login-screen a, .login-screen p, .login-screen span {
+	color:#fff !important;
+	
+}
+.login-screen a{
+	text-decoration:underline;
+}
+.login-screen a.button{
+	text-decoration:none;
+}
+.login-screen .list .item-label {
+	color:#fff !important;
+	font-size:15px;
+}
+.button{
+	border-radius: 30px;
+	font-size:16px;
+}
+.login-screen-content{
+	background-image: linear-gradient(#a100c3, #7f00f5);
+	color:#fff !important;	
+}
 
 .hometop{
 	color:#fff;
@@ -156,4 +176,18 @@ span.appWallet{font-weight:200; font-size:24px}
 }
 .hidden{
 	display:none;
+}
+
+
+input[type="date"], input[type="datetime-local"], input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], select, textarea {
+    background: 0 0;
+    font-size: inherit;
+    color: inherit;
+    border-bottom: 1px #fff solid !important;
+
+}
+
+.login-screen input, .login-screen select, .login-screen textarea {
+    background: 0 0;
+    color: #fff !important;
 }

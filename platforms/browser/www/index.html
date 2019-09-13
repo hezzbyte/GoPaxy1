@@ -23,7 +23,6 @@
   <link rel="stylesheet" href="css/frame.css">
   <link rel="stylesheet" href="css/style-blue.css">
   <link rel="stylesheet" href="css/line-awesome-font-awesome.min.css">
-  <link rel="stylesheet" href="css/line-awesome.min.css">
   <link rel="stylesheet" href="css/app.css">
 <script src="https://js.paystack.co/v1/inline.js"></script>
   
@@ -102,8 +101,8 @@
 		  <div class="newtop">
 		  
 		  <div class="proimage"></div>
-		  <span class="fullName">Adeyemi Olubunmi</span>
-		  <span class="walletBalance">N20,000</span>
+		  <span class="appFullName"></span>
+		  <span class="appWallet"></span>
 			
 		  </div>
 
@@ -218,8 +217,9 @@
         <div class="page">
           <div class="page-content login-screen-content">
 		   <div class="loginface">
-           <div class="authtop"><img width="60" src="img/logo.png" style="margin-bottom:40px;margin-top:50px;"></div>
-            <div class="login-screen-title">Login</div>
+           <div class="authtop">
+		   <img width="80" src="img/logo.png" style="margin-bottom:50px;margin-top:0px;"><br>
+		   Login</div>
             <div class="list">
               <ul>
                 <li class="item-content item-input">
@@ -257,23 +257,22 @@
               </ul>
               <div class="block-footer" style="text-align:left"><a onclick="openpasspart('.loginface', '.passreset')" href="#">I forgot my password</a>
 					
-				<a onclick="openpasspart('.loginface', '.regface')" style="float:right" href="#">Register as New User</a>
+				<a onclick="openpasspart('.loginface', '.regface')" style="float:right" href="#">Register as new user</a>
 			  </div>
             </div>
 
             </div>
 
 		   <div id="phone-verify" class="verifyface hidden">
-           <div  class="authtop"><img width="60" src="img/logo.png" style="margin-bottom:40px;margin-top:50px;"></div>
-            <div class="login-screen-title">&nbsp;</div>
+           <div  class="authtop"><img width="80" src="img/logo.png" style="margin-bottom:50px;margin-top:0px;"><br></div>
             <div class="list">
               <ul>
                 <li class="item-content item-input">
                   <div class="item-inner">
                     <div class="item-title item-label">Enter code sent to you</div>
                     <div class="item-input-wrap">
-                      <input type="hidden" name="phone" class="verphone" >
                       <input type="number" name="code" >
+                      <input type="hidden" name="phone" >
                     </div>
                   </div>
                 </li>
@@ -289,14 +288,14 @@
 					</div>
                 </li>
               </ul>
-              <div class="block-footer"><a onclick="openpasspart('.regface', '.loginface')" href="#">Back to LOGIN</a></div>
+              <div class="block-footer"><a onclick="openpasspart('.verifyface', '.loginface')" href="#">Back to login</a></div>
             </div>
 
             </div>
 
 		   <div id="reg-screen" class="regface hidden">
-           <div  class="authtop"><img width="60" src="img/logo.png" style="margin-bottom:40px;margin-top:50px;"></div>
-            <div class="login-screen-title">Register</div>
+           <div  class="authtop"><img width="80" src="img/logo.png" style="margin-bottom:50px;margin-top:0px;"><br>
+Register</div>
             <div class="list">
               <ul>
                 
@@ -335,15 +334,14 @@
 					</div>
                 </li>
               </ul>
-              <div class="block-footer"><a onclick="openpasspart('.regface', '.loginface')" href="#">Back to LOGIN</a></div>
+              <div class="block-footer"><a onclick="openpasspart('.regface', '.loginface')" href="#">Back to login</a></div>
             </div>
 
             </div>
 
 
           <div class="passreset hidden">
-           <div class="authtop"><img width="60" src="img/logo.png" style="margin-bottom:40px;margin-top:50px;"></div>
-            <div class="login-screen-title">Reset Password</div>
+           <div class="authtop"><img width="80" src="img/logo.png" style="margin-bottom:50px;margin-top:0px;"><br>Reset Password</div>
             <div class="list">
               <ul>
                 <li class="item-content item-input">
@@ -370,13 +368,12 @@
                   </div>
                 </li>
               </ul>
-              <div class="block-footer"><a onclick="openpasspart('.passreset', '.loginface')" href="#">Back to LOGIN</a></div>
+              <div class="block-footer"><a onclick="openpasspart('.passreset', '.loginface')" href="#">Back to login</a></div>
             </div>
           </div>
 
           <div class="newpass hidden">
-           <div  class="authtop"><img width="60" src="img/logo.png" style="margin-bottom:40px;margin-top:50px;"></div>
-            <div class="login-screen-title">Reset Password</div>
+           <div  class="authtop"><img width="80" src="img/logo.png" style="margin-bottom:50px;margin-top:0px;"><br>Reset Password</div>
             <div class="list">
               <ul>
                 <li class="item-content item-input">
@@ -421,7 +418,7 @@
                   </div>
                 </li>
               </ul>
-              <div class="block-footer"><a onclick="openpasspart('.newpass', '.loginface')" href="#">Back to LOGIN</a></div>
+              <div class="block-footer"><a onclick="openpasspart('.newpass', '.loginface')" href="#">Back to login</a></div>
             </div>
 
             </div>
