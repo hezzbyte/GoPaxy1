@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.gopaxy.app" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.gopaxy.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>GoPaxy</name>
     <description>
         A mobile money app.
@@ -25,16 +25,12 @@
         <allow-intent href="itms-apps:*" />
         <preference name="BackupWebStorage" value="none" />
     </platform>
-	
     <preference name="DisallowOverscroll" value="true" />
-	<preference name="SplashScreenDelay" value="10000"/>
- 
-	<plugin name="cordova-plugin-whitelist" spec="~1.2.0" />
+    <plugin name="cordova-plugin-whitelist" spec="~1.2.0" />
     <plugin name="cordova-plugin-console" spec="~1.0.1" />
     <plugin name="cordova-plugin-statusbar" spec="~1.0.1" />
 	<splash src="splash.png" />
-	
-	
+
 	<platform name="android">
         <icon src="res/icon/android/drawable-ldpi-icon.png" density="ldpi" />
         <icon src="res/icon/android/drawable-mdpi-icon.png" density="mdpi" />
@@ -49,7 +45,6 @@
         <splash src="res/screen/android/drawable-land-xhdpi-screen.png" density="land-xhdpi" />
         <splash src="res/screen/android/drawable-land-xxhdpi-screen.png" density="land-xxhdpi" />
         <splash src="res/screen/android/drawable-land-xxxhdpi-screen.png" density="land-xxxhdpi" />
-		
     </platform>
         
 
