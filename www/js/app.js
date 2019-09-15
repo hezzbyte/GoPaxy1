@@ -192,6 +192,7 @@ if(ref != ''){
 	 
 	app.dialog.alert(data);
 	mainView.router.navigate('/');
+	updatewall();
 	app.preloader.hide();
 
 
