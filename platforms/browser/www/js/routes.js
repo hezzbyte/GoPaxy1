@@ -28,6 +28,10 @@ routes = [
     url: './pages/settings.html',
   },
   {
+    path: '/fund-wallet/',
+    url: './pages/fund-wallet.html',
+  },
+  {
     path: '/wallet/',
     url: './pages/wallet.html',
   },
