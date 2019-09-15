@@ -12,6 +12,10 @@ routes = [
     url: './pages/pay.html',
   },
   {
+    path: '/confirm-pay/',
+    url: './pages/confirm-pay.html',
+  },
+  {
     path: '/transfer/',
     url: './pages/transfer.html',
   },

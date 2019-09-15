@@ -162,14 +162,14 @@ $$(document).on('page:init', '.page[data-name="wallet"]', function (e) {
   });
 
 $$(document).on('page:init', '.page[data-name="pay"]', function (e) {
-	payWithPaystack(); 
+	//payWithPaystack(); 
   });
 
-function payWithPaystack(){
+function payWithPaystack(amount1, email1, phone1){
     var handler = PaystackPop.setup({
       key: 'pk_test_e953822127e2304620428f17063afd68e39779f0',
-	  email: 'hezzbyte@gmail.com',
-      amount: 100000,
+	  email: email1,
+      amount: amount1*100,
       currency: "NGN",
       ref: ''+Math.floor((Math.random() * 1000000000) + 1), // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you
       metadata: {
@@ -177,15 +177,18 @@ function payWithPaystack(){
             {
                 display_name: "Mobile Number",
                 variable_name: "mobile_number",
-                value: "+2348012345678"
+                value: phone1
             }
          ]
       },
       callback: function(response){
-          alert('success. transaction ref is ' + response.reference);
+			localStorage.payResponse = response.reference;
+		  	mainView.router.navigate('/confirm-pay/');
+
       },
       onClose: function(){
-          alert('window closed');
+		  	mainView.router.navigate('/fund-wallet/');
+        	alert('Transaction was calceled!');
       }
     });
     handler.openIframe();
@@ -209,7 +212,16 @@ function logout(){
   app.dialog.alert('Successfully logged out');
 }
 
-
+function fundwallet(){
+	var email = localStorage.appUserEmail;
+	var phone = localStorage.appUserPhone;
+	var amount = $$('.fundwall [name="amount"]').val();
+	
+	app.preloader.show();
+	mainView.router.navigate('/pay/');
+	payWithPaystack(amount, email, phone);
+	app.preloader.hide();
+}
 
 
 // set new password
