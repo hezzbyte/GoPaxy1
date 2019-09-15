@@ -182,9 +182,24 @@ function payWithPaystack(amount1, email1, phone1){
          ]
       },
       callback: function(response){
-			localStorage.payResponse = response.reference;
-		  	mainView.router.navigate('/confirm-pay/');
+var ref = response.reference;
 
+if(ref != ''){
+ app.preloader.show();  
+ app.request.get(formURL, {reference: ref}, 
+
+ function (data) {
+	 
+	app.dialog.alert(data);
+	mainView.router.navigate('/');
+
+
+}, function(){
+	$$('.loginStat').html('<span class="red">Error! No internet connection.</span>');	
+	app.preloader.hide();
+});
+}
+			
       },
       onClose: function(){
 		  	mainView.router.navigate('/fund-wallet/');
