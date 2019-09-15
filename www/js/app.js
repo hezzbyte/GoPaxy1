@@ -205,7 +205,7 @@ if(ref != ''){
       },
       onClose: function(){
 		  	mainView.router.navigate('/fund-wallet/');
-        	alert('Transaction was calceled!');
+        	alert('Transaction was cancelled!');
       }
     });
     handler.openIframe();
@@ -412,12 +412,13 @@ $$('#reg-screen .register-button').on('click', function () {
   var mobile = $$('#reg-screen [name="phone"]').val();
   var username = $$('#reg-screen [name="username"]').val();
   var password = $$('#reg-screen [name="password"]').val();
+  var email = $$('#reg-screen [name="email"]').val();
   var reqst = 'register';
   
-if(mobile != '' && username != '' && password != ''){
+if(mobile != '' && username != '' && password != '' && email != ''){
  app.preloader.show();
   
-app.request.get(formURL, {req: reqst, phone: mobile, user: username, pass: password}, function (data) {
+app.request.get(formURL, {req: reqst, phone: mobile, user: username, mail: email, pass: password}, function (data) {
 	data = JSON.parse(data);
  //app.dialog.alert(data.status);
   if(data.status == 'failed'){

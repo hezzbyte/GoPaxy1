@@ -152,7 +152,8 @@ span.appWallet{font-weight:200; font-size:24px}
 	padding:20px 10px;
 	color:#fff;
 	min-height:150px;
-	background-image:url(../img/home.jpg);
+	background: rgb(238,174,202);
+	background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); 	
 	background-position:center;
 	background-size:cover;
  }
