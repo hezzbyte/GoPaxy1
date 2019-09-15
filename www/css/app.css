@@ -152,10 +152,9 @@ span.appWallet{font-weight:200; font-size:24px}
 	padding:20px 10px;
 	color:#fff;
 	min-height:150px;
-	background: rgb(238,174,202);
-	background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); 	
-	background-position:center;
-	background-size:cover;
+	background: rgb(158,34,195);
+	background: linear-gradient(0deg, rgba(158,34,195,1) 0%, rgba(151,29,111,1) 100%); 
+
  }
 .login-button{
 	display:block;

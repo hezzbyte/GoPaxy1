@@ -229,7 +229,7 @@ function logout(){
   app.dialog.alert('Successfully logged out');
 }
 
-function fundwallet(){
+$$('.fundwallet').on('click', function () {
 	var email = localStorage.appUserEmail;
 	var phone = localStorage.appUserPhone;
 	var amount = $$('.fundwall [name="amount"]').val();
@@ -238,7 +238,7 @@ function fundwallet(){
 	mainView.router.navigate('/pay/');
 	payWithPaystack(amount, email, phone);
 	app.preloader.hide();
-}
+});
 
 
 // set new password
