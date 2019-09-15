@@ -87,7 +87,7 @@ span.appWallet{font-weight:200; font-size:24px}
 }
 
 .space1{
-	height:170px;
+	height:70px;
 }
 
 .shadow{
@@ -190,4 +190,15 @@ input[type="date"], input[type="datetime-local"], input[type="email"], input[typ
 .login-screen input, .login-screen select, .login-screen textarea {
     background: 0 0;
     color: #fff !important;
+}
+
+.navbar .title {
+	text-align:left;
+
+    font-size: 18px;
+    color: #fff;
+
+}
+.md .navbar a.link {
+    color: #fff;
 }
