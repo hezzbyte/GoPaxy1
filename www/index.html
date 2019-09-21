@@ -256,9 +256,9 @@
 
                 </li>
               </ul>
-              <div class="block-footer" style="text-align:left"><a onclick="openpasspart('.loginface', '.passreset')" href="#">I forgot my password</a>
+              <div class="block-footer" style="text-align:left"><a onclick="switchv('.loginface', '.passreset')" href="#">I forgot my password</a>
 					
-				<a onclick="openpasspart('.loginface', '.regface')" style="float:right" href="#">Register as new user</a>
+				<a onclick="switchv('.loginface', '.regface')" style="float:right" href="#">Register as new user</a>
 			  </div>
             </div>
 
@@ -289,17 +289,32 @@
 					</div>
                 </li>
               </ul>
-              <div class="block-footer"><a onclick="openpasspart('.verifyface', '.loginface')" href="#">Back to login</a></div>
+              <div class="block-footer"><a onclick="switchv('.verifyface', '.loginface')" href="#">Back to login</a></div>
             </div>
 
             </div>
 
 		   <div id="reg-screen" class="regface hidden">
            <div  class="authtop"><img width="80" src="img/logo.png" style="margin-bottom:50px;margin-top:0px;"><br>
-Register</div>
+			Register</div>
             <div class="list">
               <ul>
-                
+                <li class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">First Name</div>
+                    <div class="item-input-wrap">
+                      <input type="text" name="name1" >
+                    </div>
+                  </div>
+                </li>
+                <li class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Surname</div>
+                    <div class="item-input-wrap">
+                      <input type="text" name="name2" >
+                    </div>
+                  </div>
+                </li>
                 <li class="item-content item-input">
                   <div class="item-inner">
                     <div class="item-title item-label">Phone Number</div>
@@ -320,7 +335,7 @@ Register</div>
                   <div class="item-inner">
                     <div class="item-title item-label">Username</div>
                     <div class="item-input-wrap">
-                      <input type="text" name="username" >
+                      <input type="text" name="username">
                     </div>
                   </div>
                 </li>
@@ -343,7 +358,7 @@ Register</div>
 					</div>
                 </li>
               </ul>
-              <div class="block-footer"><a onclick="openpasspart('.regface', '.loginface')" href="#">Back to login</a></div>
+              <div class="block-footer"><a onclick="switchv('.regface', '.loginface')" href="#">Back to login</a></div>
             </div>
 
             </div>
@@ -377,7 +392,7 @@ Register</div>
                   </div>
                 </li>
               </ul>
-              <div class="block-footer"><a onclick="openpasspart('.passreset', '.loginface')" href="#">Back to login</a></div>
+              <div class="block-footer"><a onclick="switchv('.passreset', '.loginface')" href="#">Back to login</a></div>
             </div>
           </div>
 
@@ -427,7 +442,7 @@ Register</div>
                   </div>
                 </li>
               </ul>
-              <div class="block-footer"><a onclick="openpasspart('.newpass', '.loginface')" href="#">Back to login</a></div>
+              <div class="block-footer"><a onclick="switchv('.newpass', '.loginface')" href="#">Back to login</a></div>
             </div>
 
             </div>
@@ -455,5 +470,7 @@ Register</div>
 
   <!-- Your custom app scripts -->
   <script src="js/app.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/tranx.js"></script>
 </body>
 </html>

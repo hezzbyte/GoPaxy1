@@ -13,12 +13,13 @@
   
   <div class="page-content">
 	<div class="list no-hairlines-md" id="transfer1">
-	<div class="page-titles">Transfer</div>    
+	<div class="page-titles">Transfer</div>   
+		<div class="transfername"></div>
       <ul>
-        <li class=" tr-userid">
+        <li class="tr-userid">
           <div class="item-content item-input">
             <div class="item-inner">
-              <div class="item-title item-label">User ID</div>
+              <div class="item-title item-label">User ID/ Phone Number</div>
               <div class="item-input-wrap">
                 <input type="text" name="userid" placeholder=""/>
               </div>
@@ -26,7 +27,7 @@
           </div>
         </li>
 
-        <li class="hidden tr-amount">
+        <li class="tr-amount">
           <div class="item-content item-input">
             <div class="item-inner">
               <div class="item-title item-label">Amount</div>
@@ -42,8 +43,8 @@
             <div class="item-inner">
               <div class="item-input-wrap">
 			  <div class="chnBTN"></div>
-			  <a class="button button-fill trans1">NEXT</a>
-			  <a class="button button-fill trans2 hidden" style="display:none">SEND &raquo;</a>
+			  <a onclick="checkuser();" class="button button-fill trans1">NEXT</a>
+			  <a class="button button-fill trans2 hidden">SEND &raquo;</a>
 			  </div>
             </div>
           </div>

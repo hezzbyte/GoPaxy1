@@ -176,7 +176,7 @@ span.appWallet{font-weight:200; font-size:24px}
 	color:blue;
 }
 .hidden{
-	display:none;
+	display:none !important;
 }
 
 
