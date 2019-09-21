@@ -1,6 +1,19 @@
 // Dom7
 var $$ = Dom7;
 
+
+document.addEventListener('deviceready', function () {  
+  var notificationOpenedCallback = function(jsonData) {
+    console.log('notificationOpenedCallback: ' + JSON.stringify(jsonData));
+  };
+
+  window.plugins.OneSignal
+    .startInit("f9c6d067-9970-4ff0-8941-63e3b85b568f")
+    .handleNotificationOpened(notificationOpenedCallback)
+    .endInit();
+}, false);
+
+
 // Framework7 App main instance
 var app  = new Framework7({
   root: '#app', // App root element
