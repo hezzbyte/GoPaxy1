@@ -1,0 +1,12 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "GoPaxy",
+  "short_name": "GoPaxy",
+  "version": "com.gopaxy.app",
+  "description": "A mobile money app.",
+  "author": "GoPaxy",
+  "icons": [],
+  "start_url": "index.html",
+  "theme_color": "#2196f3"
+}

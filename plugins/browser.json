@@ -1,21 +1,24 @@
 {
-    "prepare_queue": {
-        "installed": [],
-        "uninstalled": []
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-console": {
+      "PACKAGE_NAME": "com.gopaxy.app"
     },
-    "config_munge": {
-        "files": {}
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "com.gopaxy.app"
     },
-    "installed_plugins": {
-        "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "com.gopaxy.app"
-        },
-        "cordova-plugin-console": {
-            "PACKAGE_NAME": "com.gopaxy.app"
-        },
-        "cordova-plugin-statusbar": {
-            "PACKAGE_NAME": "com.gopaxy.app"
-        }
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.gopaxy.app"
     },
-    "dependent_plugins": {}
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.gopaxy.app"
+    }
+  },
+  "dependent_plugins": {}
 }
