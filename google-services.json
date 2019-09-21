@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "901450421502",
+    "firebase_url": "https://gopaxy-user.firebaseio.com",
+    "project_id": "gopaxy-user",
+    "storage_bucket": "gopaxy-user.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:901450421502:android:7136776434fdee5c6e81af",
+        "android_client_info": {
+          "package_name": "com.gopaxy.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "901450421502-teph245q7tso8suc2gj1g1q12i4gk53u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIYlFCW_IsguYh61d1sw5UGac-_3GcL8A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "901450421502-teph245q7tso8suc2gj1g1q12i4gk53u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
