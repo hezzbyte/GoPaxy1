@@ -195,6 +195,7 @@ input[type="date"], input[type="datetime-local"], input[type="email"], input[typ
 
 .navbar .title {
 	text-align:left;
+	margin-left:0px;
 
     font-size: 18px;
     color: #fff;
@@ -218,3 +219,13 @@ input[type="date"], input[type="datetime-local"], input[type="email"], input[typ
 	margin-bottom:40px;
 }
 .clr{clear:both}
+.tabs .tab a.button {
+    color: #fff;
+}
+.page-titles{
+	font-size:20px;
+	color:#000;
+	display:block;
+	text-align:center;
+	margin:10px 0
+}
