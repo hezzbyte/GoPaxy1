@@ -52,7 +52,10 @@
 		<splash src="res/screen/android/drawable-land-xxhdpi-screen.png" density="port-xxhdpi"/>
 	
     </platform>
+	
+	<preference name="SplashScreen" value="splash" />
 	<preference name="SplashScreenDelay" value="10000" />
 	<splash src="splash.png" />
+	
     <engine name="browser" spec="~5.0.4" />
 </widget>
