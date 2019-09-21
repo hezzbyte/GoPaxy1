@@ -1,13 +1,7 @@
 // Dom7
 var $$ = Dom7;
 
-
-// Framework7 App main instance
-var app  = new Framework7({
-	
-	on: {
-    init() {
-      
+ $$(document).on('deviceready',function(){ 
   var notificationOpenedCallback = function(jsonData) {
     console.log('notificationOpenedCallback: ' + JSON.stringify(jsonData));
   };
@@ -16,9 +10,12 @@ var app  = new Framework7({
     .startInit("f9c6d067-9970-4ff0-8941-63e3b85b568f")
     .handleNotificationOpened(notificationOpenedCallback)
     .endInit();
-	  
-    },
-  }
+ })
+
+
+// Framework7 App main instance
+var app  = new Framework7({
+
   root: '#app', // App root element
   id: 'com.gopaxy.app', // App bundle ID
   name: 'GoPaxy', // App name
