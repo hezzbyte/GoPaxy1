@@ -18,6 +18,9 @@
     },
     "cordova-plugin-splashscreen": {
       "PACKAGE_NAME": "com.gopaxy.app"
+    },
+    "onesignal-cordova-plugin": {
+      "PACKAGE_NAME": "com.gopaxy.app"
     }
   },
   "dependent_plugins": {}

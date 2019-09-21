@@ -16,9 +16,11 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <gap:plugin name="onesignal-cordova-plugin" source="npm" spec="^2.4.1" />
     <splash src="splash.png" />
     <preference name="android-targetSdkVersion" value="28" />
     <preference name="DisallowOverscroll" value="true" />
+    <preference name="phonegap-version" value="cli-8.0.0" />
     <preference name="SplashScreen" value="splash" />
     <preference name="SplashScreenDelay" value="3000" />
     <preference name="ShowSplashScreenSpinner" value="false" />
