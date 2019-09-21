@@ -99,24 +99,12 @@ function openpasspart(tohide, toshow){
 	$$(toshow).show();
 }
 
-
 function updatewall(){
 	var reqst = 'updatewall';
 	var userID = localStorage.appUserID;
 	app.request.get(formURL, {req: reqst, user: userID}, function (data) {
 		    localStorage.appWallet = data;
 			$$('.appWallet').text('₦' + nformat(localStorage.appWallet));		
-	});	
-}
-
-function triphis(){
-	var reqst = 'triphis';
-	var userID = localStorage.appUserID;
-	app.preloader.show();
-
-	app.request.get(formURL, {req: reqst, user: userID}, function (data) {
-	$$('.triphis').html(data);  
-	app.preloader.hide();
 	});	
 }
 
@@ -229,7 +217,7 @@ function logout(){
   app.dialog.alert('Successfully logged out');
 }
 
-$$('.fundwallet').on('click', function () {
+function fundwallet(){
 	var email = localStorage.appUserEmail;
 	var phone = localStorage.appUserPhone;
 	var amount = $$('.fundwall [name="amount"]').val();
@@ -238,7 +226,7 @@ $$('.fundwallet').on('click', function () {
 	mainView.router.navigate('/pay/');
 	payWithPaystack(amount, email, phone);
 	app.preloader.hide();
-});
+}
 
 
 // set new password

@@ -99,24 +99,12 @@ function openpasspart(tohide, toshow){
 	$$(toshow).show();
 }
 
-
 function updatewall(){
 	var reqst = 'updatewall';
 	var userID = localStorage.appUserID;
 	app.request.get(formURL, {req: reqst, user: userID}, function (data) {
 		    localStorage.appWallet = data;
 			$$('.appWallet').text('₦' + nformat(localStorage.appWallet));		
-	});	
-}
-
-function triphis(){
-	var reqst = 'triphis';
-	var userID = localStorage.appUserID;
-	app.preloader.show();
-
-	app.request.get(formURL, {req: reqst, user: userID}, function (data) {
-	$$('.triphis').html(data);  
-	app.preloader.hide();
 	});	
 }
 
@@ -192,6 +180,8 @@ if(ref != ''){
 	 
 	app.dialog.alert(data);
 	mainView.router.navigate('/');
+	updatewall();
+	app.preloader.hide();
 
 
 }, function(){
@@ -203,7 +193,7 @@ if(ref != ''){
       },
       onClose: function(){
 		  	mainView.router.navigate('/fund-wallet/');
-        	alert('Transaction was calceled!');
+        	alert('Transaction was cancelled!');
       }
     });
     handler.openIframe();
@@ -410,12 +400,13 @@ $$('#reg-screen .register-button').on('click', function () {
   var mobile = $$('#reg-screen [name="phone"]').val();
   var username = $$('#reg-screen [name="username"]').val();
   var password = $$('#reg-screen [name="password"]').val();
+  var email = $$('#reg-screen [name="email"]').val();
   var reqst = 'register';
   
-if(mobile != '' && username != '' && password != ''){
+if(mobile != '' && username != '' && password != '' && email != ''){
  app.preloader.show();
   
-app.request.get(formURL, {req: reqst, phone: mobile, user: username, pass: password}, function (data) {
+app.request.get(formURL, {req: reqst, phone: mobile, user: username, mail: email, pass: password}, function (data) {
 	data = JSON.parse(data);
  //app.dialog.alert(data.status);
   if(data.status == 'failed'){

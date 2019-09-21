@@ -141,17 +141,18 @@ span.appWallet{font-weight:200; font-size:24px}
 	background-image:url(../img/user.png);
 	margin:20px auto;
 }
-.fullName{font-size:17px; display:block; margin-top:10px; margin-bottom:4px;}
+.fullName{font-size:17px; display:block; }
 .userName{font-size:16px;}
 .walletBalance{font-size:16px; font-weight:900;}
 .newtop{
-	text-shadow: 1px 0px 8px #060202;
+	text-shadow: 1px 0px 2px #060202;
 	color: #FFFFFF;		
 	text-align:center;
 	background-color:#000;
 	padding:20px 10px;
 	color:#fff;
-	min-height:150px;
+	padding-top:40px;
+	padding-bottom:40px;
 	background: rgb(158,34,195);
 	background: linear-gradient(0deg, rgba(158,34,195,1) 0%, rgba(151,29,111,1) 100%); 
 
@@ -202,3 +203,18 @@ input[type="date"], input[type="datetime-local"], input[type="email"], input[typ
 .md .navbar a.link {
     color: #fff;
 }
+.hname{
+	float:left;
+	font-size:18px;
+	padding-top:6px;
+}
+.hwallet{
+	font-size:22px;
+	float:right;
+}
+.hlogo{
+	display:block;
+	float:left;
+	margin-bottom:40px;
+}
+.clr{clear:both}
