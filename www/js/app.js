@@ -2,7 +2,12 @@
 var $$ = Dom7;
 
 
-document.addEventListener('deviceready', function () {  
+// Framework7 App main instance
+var app  = new Framework7({
+	
+	on: {
+    init() {
+      
   var notificationOpenedCallback = function(jsonData) {
     console.log('notificationOpenedCallback: ' + JSON.stringify(jsonData));
   };
@@ -11,11 +16,9 @@ document.addEventListener('deviceready', function () {
     .startInit("f9c6d067-9970-4ff0-8941-63e3b85b568f")
     .handleNotificationOpened(notificationOpenedCallback)
     .endInit();
-}, false);
-
-
-// Framework7 App main instance
-var app  = new Framework7({
+	  
+    },
+  }
   root: '#app', // App root element
   id: 'com.gopaxy.app', // App bundle ID
   name: 'GoPaxy', // App name
@@ -100,6 +103,7 @@ function loadContent(){
 
 
 $$(document).on('page:init', function (e) {
+	
 	loadContent();
 });
 
