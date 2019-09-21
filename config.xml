@@ -52,8 +52,8 @@
     </platform>
 	
 	<preference name="SplashScreen" value="splash" />
-	<preference name="SplashScreenDelay" value="3000" />
-	<preference name="ShowSplashScreenSpinner" value="true"/>
+	<preference name="SplashScreenDelay" value="4000" />
+	<preference name="ShowSplashScreenSpinner" value="flase"/>
 	<preference name="SplashShowOnlyFirstTime" value="false" />
 	<splash src="splash.png" />
 	
