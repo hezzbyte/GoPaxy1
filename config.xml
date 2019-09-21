@@ -54,8 +54,10 @@
 	
     </platform>
 	
-	<preference name="SplashScreen" value="splash" />
+	<preference name="SplashScreen" value="screen" />
 	<preference name="SplashScreenDelay" value="10000" />
+	<preference name="ShowSplashScreenSpinner" value="false"/>
+	<preference name="SplashShowOnlyFirstTime" value="false" />
 	<splash src="splash.png" />
 	
     <engine name="browser" spec="~5.0.4" />
