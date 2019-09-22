@@ -26,12 +26,13 @@
     </platform>
     <preference name="android-targetSdkVersion" value="28" />
     <preference name="DisallowOverscroll" value="true" />
-    <preference name="phonegap-version" value="cli-7.0.0" />
-	
+    <preference name="phonegap-version" value="cli-8.0.0" />
     <plugin name="cordova-plugin-console" spec="1.0.7" />
     <plugin name="cordova-plugin-splashscreen" spec="5.0.3" />
     <plugin name="cordova-plugin-statusbar" spec="1.0.1" />
+    <plugin name="cordova-plugin-whitelist" spec="1.2.2" />
 	
+    <splash src="splash.png" />
     <platform name="android">
         <icon density="ldpi" src="res/icon/android/drawable-ldpi-icon.png" />
         <icon density="mdpi" src="res/icon/android/drawable-mdpi-icon.png" />
@@ -50,6 +51,6 @@
     <preference name="SplashScreenDelay" value="3000" />
     <preference name="ShowSplashScreenSpinner" value="false" />
     <preference name="SplashShowOnlyFirstTime" value="false" />
-    <splash src="splash.png" />
+
     <engine name="browser" spec="~5.0.4" />
 </widget>
