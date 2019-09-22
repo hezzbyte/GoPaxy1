@@ -26,13 +26,10 @@
     </platform>
     <preference name="android-targetSdkVersion" value="28" />
     <preference name="DisallowOverscroll" value="true" />
-    <preference name="phonegap-version" value="cli-8.0.0" />
     <plugin name="cordova-plugin-console" spec="1.0.7" />
     <plugin name="cordova-plugin-splashscreen" spec="5.0.3" />
     <plugin name="cordova-plugin-statusbar" spec="1.0.1" />
     <plugin name="cordova-plugin-whitelist" spec="1.2.2" />
-	<plugin name="cordova-plugin-barcodescanner" />
-	
     <splash src="splash.png" />
     <platform name="android">
         <icon density="ldpi" src="res/icon/android/drawable-ldpi-icon.png" />
@@ -41,17 +38,16 @@
         <icon density="xhdpi" src="res/icon/android/drawable-xhdpi-icon.png" />
         <icon density="xxhdpi" src="res/icon/android/drawable-xxhdpi-icon.png" />
         <icon density="xxxhdpi" src="res/icon/android/drawable-xxxhdpi-icon.png" />
-        <splash density="ldpi" src="res/screen/android/drawable-port-ldpi-screen.png" />
-        <splash density="mdpi" src="res/screen/android/drawable-port-mdpi-screen.png" />
-        <splash density="hdpi" src="res/screen/android/drawable-port-hdpi-screen.png" />
-        <splash density="xhdpi" src="res/screen/android/drawable-port-xhdpi-screen.png" />
-        <splash density="xxhdpi" src="res/screen/android/drawable-port-xxhdpi-screen.png" />
-        <splash density="xxhdpi" src="res/screen/android/drawable-port-xxxhdpi-screen.png" />
+        <splash qualifier="ldpi" src="res/screen/android/drawable-port-ldpi-screen.png" />
+        <splash qualifier="mdpi" src="res/screen/android/drawable-port-mdpi-screen.png" />
+        <splash qualifier="hdpi" src="res/screen/android/drawable-port-hdpi-screen.png" />
+        <splash qualifier="xhdpi" src="res/screen/android/drawable-port-xhdpi-screen.png" />
+        <splash qualifier="xxhdpi" src="res/screen/android/drawable-port-xxhdpi-screen.png" />
+        <splash qualifier="xxhdpi" src="res/screen/android/drawable-port-xxxhdpi-screen.png" />
     </platform>
     <preference name="SplashScreen" value="splash" />
     <preference name="SplashScreenDelay" value="3000" />
     <preference name="ShowSplashScreenSpinner" value="false" />
     <preference name="SplashShowOnlyFirstTime" value="false" />
-
     <engine name="browser" spec="~5.0.4" />
 </widget>
