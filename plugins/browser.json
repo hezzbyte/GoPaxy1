@@ -21,6 +21,9 @@
     },
     "onesignal-cordova-plugin": {
       "PACKAGE_NAME": "com.gopaxy.app"
+    },
+    "phonegap-plugin-barcodescanner": {
+      "PACKAGE_NAME": "com.gopaxy.app"
     }
   },
   "dependent_plugins": {}

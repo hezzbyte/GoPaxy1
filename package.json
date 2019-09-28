@@ -1,0 +1,29 @@
+{
+  "name": "com.gopaxy.app",
+  "version": "1.0.0",
+  "displayName": "GoPaxy",
+  "cordova": {
+    "platforms": [
+      "browser",
+      "android"
+    ],
+    "plugins": {
+      "cordova-plugin-console": {},
+      "cordova-plugin-splashscreen": {},
+      "cordova-plugin-statusbar": {},
+      "cordova-plugin-whitelist": {},
+      "phonegap-plugin-barcodescanner": {
+        "ANDROID_SUPPORT_V4_VERSION": "27.+"
+      }
+    }
+  },
+  "dependencies": {
+    "cordova-android": "~7.1.4",
+    "cordova-browser": "~5.0.4",
+    "cordova-plugin-console": "1.0.7",
+    "cordova-plugin-splashscreen": "5.0.3",
+    "cordova-plugin-statusbar": "1.0.1",
+    "cordova-plugin-whitelist": "1.2.2",
+    "phonegap-plugin-barcodescanner": "8.1.0"
+  }
+}

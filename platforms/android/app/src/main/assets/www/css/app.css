@@ -1,0 +1,231 @@
+
+/* Your app styles here */
+.red{color:red !important; font-weight:100; font-size:14px;}
+.green{color:green !important; font-weight:100; font-size:14px;}
+
+.home.block-title{margin-top:140px}
+.toolbar-inner {
+}
+
+.text-center{text-align:center}
+.text-right{text-align:right}
+.text-left{text-align:left}
+.text-justify{text-align:justify}
+
+h3.appFullName{margin-bottom:5px;}
+span.appWallet{font-weight:200; font-size:24px}
+.active-trip h2{margin-bottom:0px;}
+.tmr{font-size:20px; font-weight:200; color:green}
+.my-list {margin-top:0px !important;}
+.my-list ul li{padding:14px 0; border-bottom:1px #ddd solid}
+
+.pimg{margin: 0 auto; width: 80px; position:relative; height:80px; border-radius:50%; background-position:center; background-size:cover; background-color:blue; -webkit-box-shadow:0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24);box-shadow:0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24)}
+.mxcc{color:#777}
+.mxcc span, .mxcc strong{color:#333}
+.phonehd{display:none}
+.gradb{padding:20px 0 30px;margin-bottom:30px; border-bottom:1px #aaa solid}
+.hidden{display:none}
+
+.authtop{
+	text-align:center;
+	margin-bottom:30px;
+	padding-top:100px;
+	padding-bottom:20px;
+	/*background-image:url(../img/head.png);*/
+	background-size:contain;
+	background-position:center top;
+	background-repeat:no-repeat;
+	font-size: 20px;
+	color:#fff;
+
+}
+.login-screen label, .login-screen a, .login-screen p, .login-screen span {
+	color:#fff !important;
+	
+}
+.login-screen a{
+	text-decoration:underline;
+}
+.login-screen a.button{
+	text-decoration:none;
+}
+.login-screen .list .item-label {
+	color:#fff !important;
+	font-size:15px;
+}
+.button{
+	border-radius: 30px;
+	font-size:16px;
+}
+.login-screen-content{
+	background-image: linear-gradient(#a100c3, #7f00f5);
+	color:#fff !important;	
+}
+
+.hometop{
+	color:#fff;
+	min-height:130px;
+	padding:20px;
+	background-image: linear-gradient(#0d32ad, blue);
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 72%);
+	text-align:right;
+}
+.hometop1{
+	color:#fff;
+	min-height:100px;
+	padding:20px;
+	background-image: linear-gradient(#0d32ad, blue);
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 72%);
+	position:fixed;
+	z-index:111;
+	top:0;
+	left:0;
+	right:0;
+}
+.space{
+	height:140px;
+}
+
+.space1{
+	height:70px;
+}
+
+.shadow{
+}
+.card-expandable {
+	height: 100px;
+	}
+.bl{
+	background-color:#5555ff;
+	color:#fff;
+}
+.bl1{
+	background-color:#ff55ff;
+	color:#fff;
+}
+.bl2{
+	background-color:#55ff55;
+	color:#fff;
+}
+.bl3{
+	background-color:#a55fff;
+	color:#fff;
+}
+.p-top{
+	padding-top:32px;
+}
+.list ul {
+    background: transparent;
+}
+.proimage{
+	height:80px;
+	width:80px;
+	border-radius:50%;
+	background-color:#fff;
+	border:3px #fff solid;
+	margin:0 auto;
+	padding:1px;
+	background-position:center center;
+	background-size:cover;
+	background-image:url(../img/user.png);
+}
+.setimage{
+	height:80px;
+	width:80px;
+	border-radius:50%;
+	background-color:#fff;
+	border:1px #888 solid;
+	padding:1px;
+	background-position:center center;
+	background-size:cover;
+	background-image:url(../img/user.png);
+	margin:20px auto;
+}
+.fullName{font-size:17px; display:block; }
+.userName{font-size:16px;}
+.walletBalance{font-size:16px; font-weight:900;}
+.newtop{
+	text-shadow: 1px 0px 2px #060202;
+	color: #FFFFFF;		
+	text-align:center;
+	background-color:#000;
+	padding:20px 10px;
+	color:#fff;
+	padding-top:40px;
+	padding-bottom:40px;
+	background: rgb(158,34,195);
+	background: linear-gradient(0deg, rgba(158,34,195,1) 0%, rgba(151,29,111,1) 100%); 
+
+ }
+.login-button{
+	display:block;
+}
+
+.feature_sect{
+	overflow: auto;
+	padding:10px 3px;
+	white-space: nowrap;
+}
+.feature_sect img{
+	box-shadow:1px 0px 3px rgba(6,2,2,0.42);
+	height:120px;
+	margin-right:15px;
+	display:inline-block;
+}
+.block-footer a{
+	color:blue;
+}
+.hidden{
+	display:none !important;
+}
+
+
+input[type="date"], input[type="datetime-local"], input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], select, textarea {
+    background: 0 0;
+    font-size: inherit;
+    color: inherit;
+    border-bottom: 1px #fff solid !important;
+
+}
+
+.login-screen input, .login-screen select, .login-screen textarea {
+    background: 0 0;
+    color: #fff !important;
+}
+
+.navbar .title {
+	text-align:left;
+	margin-left:0px;
+
+    font-size: 18px;
+    color: #fff;
+
+}
+.md .navbar a.link {
+    color: #fff;
+}
+.hname{
+	float:left;
+	font-size:18px;
+	padding-top:6px;
+}
+.hwallet{
+	font-size:22px;
+	float:right;
+}
+.hlogo{
+	display:block;
+	float:left;
+	margin-bottom:40px;
+}
+.clr{clear:both}
+.tabs .tab a.button {
+    color: #fff;
+}
+.page-titles{
+	font-size:20px;
+	color:#000;
+	display:block;
+	text-align:center;
+	margin:10px 0
+}
