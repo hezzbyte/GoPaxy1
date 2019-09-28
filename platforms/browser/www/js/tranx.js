@@ -79,16 +79,29 @@ function withdrawfund(){
 }
 
 
+// Load invoice details
+function cmm(){
+	app.preloader.hide();
+	app.dialog.alert('Invoice not found!');
+}
+function loadinv(){
+	app.preloader.show();
+	setTimeout(cmm, 2000);
+	
+}
+
 // Confirm user before transfer
 function checkuser() {
   var userid = $$('#transfer1 [name="userid"]').val();
+  var amount = $$('#transfer1 [name="amount"]').val();
   var reqst = 'confirmID';
   
 if(userid != '' ){
  app.preloader.show();
   
-app.request.get(formURL, {req: reqst, user: userid}, function (data) {
+app.request.get(formURL, {req: reqst, user: userid, amt: amount}, function (data) {
 	data = JSON.parse(data);
+	$$('.tranStat').html('');	
  //app.dialog.alert(data.status);
   if(data.status == 'failed'){
 	$$('.tranStat').html('<span class="red">'+ data.error +'</span>');	
@@ -96,10 +109,11 @@ app.request.get(formURL, {req: reqst, user: userid}, function (data) {
   }
 	else if(data.status == 'success'){
   //show amount field
-	$$('.trans1').hide();
-	$$('.trans2').show();
+	$$('.tr-de').show();
+	$$('.tr-rs').hide();
 	
-	$$('.transfername').html('<span class="green">'+ data.fullName +'</span>');
+	$$('.transfername').html(data.fullName);
+	$$('.transferamount').html('₦' + nformat(data.amount));
 	app.preloader.hide();	
 
 }
@@ -114,3 +128,18 @@ app.request.get(formURL, {req: reqst, user: userid}, function (data) {
 }, {dataType: 'json'});
 }
 }
+
+//Complete transfer
+function transferf(){
+	
+}
+function cmmv(){
+	mainView.router.navigate('/');
+	app.preloader.hide();
+	app.dialog.alert('Fund Successfully Sent');
+}
+function transferf(){
+	app.preloader.show();
+	setTimeout(cmmv, 2000);	
+}
+

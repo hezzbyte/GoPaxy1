@@ -229,3 +229,6 @@ input[type="date"], input[type="datetime-local"], input[type="email"], input[typ
 	text-align:center;
 	margin:10px 0
 }
+.darkk{
+	color:#000 !important;
+}

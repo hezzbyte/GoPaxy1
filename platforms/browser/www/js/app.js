@@ -107,6 +107,12 @@ $$(document).on('page:init', function (e) {
 $$(document).on('page:init', '.page[data-name="my-profile"]', function (e) {
 
   });
+  
+$$(document).on('page:init', '.page[data-name="transfer"]', function (e) {
+	$$('.tr-de').hide();
+    //app.dialog.alert('Hello World!');
+
+  });
 
 $$(document).on('page:init', '.page[data-name="wallet"]', function (e) {
 	trans();

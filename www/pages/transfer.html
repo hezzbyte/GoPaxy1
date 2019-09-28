@@ -1,4 +1,4 @@
-<div class="page" data-name="form">
+<div class="page" data-name="transfer">
   <div class="navbar">
     <div class="navbar-inner sliding">
       <div class="left">
@@ -14,25 +14,24 @@
   <div class="page-content">
 	<div class="list no-hairlines-md" id="transfer1">
 	<div class="page-titles">Transfer</div>   
-		<div class="transfername"></div>
-      <ul>
-        <li class="tr-userid">
+
+      <ul class="tr-de">
+		<li>
           <div class="item-content item-input">
             <div class="item-inner">
-              <div class="item-title item-label">User ID/ Phone Number</div>
-              <div class="item-input-wrap">
-                <input type="text" name="userid" placeholder=""/>
+              <div class="item-input-wrap darkk">
+				Sending <span class="transferamount"></span> to <span class="transfername"></span>
               </div>
             </div>
           </div>
         </li>
 
-        <li class="tr-amount">
+        <li>
           <div class="item-content item-input">
             <div class="item-inner">
-              <div class="item-title item-label">Amount</div>
+              <div class="item-title item-label">Enter password</div>
               <div class="item-input-wrap">
-                <input type="text" name="amount" placeholder=""/>
+                <input type="password" name="transpass" placeholder=""/>
               </div>
             </div>
           </div>
@@ -42,9 +41,42 @@
           <div class="item-content item-input">
             <div class="item-inner">
               <div class="item-input-wrap">
-			  <div class="chnBTN"></div>
-			  <a onclick="checkuser();" class="button button-fill trans1">NEXT</a>
-			  <a class="button button-fill trans2 hidden">SEND &raquo;</a>
+			  <div class="tranStat"></div>
+			  <a onclick="transferf();" class="button button-fill">SEND &raquo;</a>
+			  </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul class="tr-rs">
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">User ID/ Phone Number</div>
+              <div class="item-input-wrap">
+                <input type="number" name="userid" placeholder=""/>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Amount</div>
+              <div class="item-input-wrap">
+                <input type="number" name="amount" placeholder=""/>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-input-wrap">
+			  <div class="tranStat"></div>
+			  <a onclick="checkuser();" class="button button-fill trans1">SEND</a>
 			  </div>
             </div>
           </div>
