@@ -7,7 +7,7 @@
           <span class="ios-only">Back</span>
         </a>
       </div>
-		<div class="title">My Profile</div>
+		<div class="title">Update Profile</div>
     </div>
   </div>
   
@@ -15,29 +15,23 @@
   
   
   <div class="page-content">
-    <div class="text-center" style="background-color:#eee; padding:20px;">
-	
-<div class="pimg"><img src="img/user.png" width="100%"></div>	
-
-	</div>
-
-		   <div id="" class="regface">
-            <div class="page-titles">My Profile</div>
+  		   <div id="" class="regface">
+            <div class="page-titles">Update Profile</div>
             <div class="list">
               <ul>
                 <li class="item-content item-input">
                   <div class="item-inner">
-                    <div class="item-title item-label">First Name</div>
+                    <div class="item-title item-label">FirstName</div>
                     <div class="item-input-wrap">
-                      Olubunmi
+                      <input type="text" name="firstname" >
                     </div>
                   </div>
                 </li>
                 <li class="item-content item-input">
                   <div class="item-inner">
-                    <div class="item-title item-label">Last Name</div>
+                    <div class="item-title item-label">LastName</div>
                     <div class="item-input-wrap">
-                      Adeyemi
+                      <input type="text" name="lastname" >
                     </div>
                   </div>
                 </li>
@@ -45,32 +39,35 @@
                   <div class="item-inner">
                     <div class="item-title item-label">Email</div>
                     <div class="item-input-wrap">
-                      hezzbyte@mail.com
-                    </div>
-                  </div>
-                </li>
-                <li class="item-content item-input">
-                  <div class="item-inner">
-                    <div class="item-title item-label">Phone Number</div>
-                    <div class="item-input-wrap">
-                      08033981537
-                    </div>
-                  </div>
-                </li>
-                <li class="item-content item-input">
-                  <div class="item-inner">
-                    <div class="item-title item-label">Gender</div>
-                    <div class="item-input-wrap">
-                      Male
+                      <input type="email" readonly >
                     </div>
                   </div>
                 </li>
 
                 <li class="item-content item-input">
                   <div class="item-inner">
-                    <div class="item-title item-label">DOB</div>
+                    <div class="item-title item-label">Username</div>
                     <div class="item-input-wrap">
-                      30-07-1988
+                      <input type="text" readonly >
+                    </div>
+                  </div>
+                </li>
+
+                <li class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Gender</div>
+					
+						<input type="radio"> Male
+						<input type="radio"> Female
+						
+					</div>
+                </li>
+
+                <li class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Date of Birth</div>
+                    <div class="item-input-wrap">
+                      <input type="date" name="dob" >
                     </div>
                   </div>
                 </li>
@@ -79,7 +76,7 @@
                   <div class="item-inner">
                     <div class="item-title item-label">Country</div>
                     <div class="item-input-wrap">
-                      Nigeria
+                      <input type="text" readonly value="Nigeria" name="" >
                     </div>
                   </div>
                 </li>
@@ -88,23 +85,35 @@
                   <div class="item-inner">
                     <div class="item-title item-label">State</div>
                     <div class="item-input-wrap">
-                      Lagos State
+                      <select  name="" >
+						<option>Abia<option>
+						<option><option>
+						<option><option>
+                      </select>
                     </div>
                   </div>
                 </li>
-
+				
                 <li class="item-content item-input">
                   <div class="item-inner">
                     <div class="item-title item-label">Address</div>
                     <div class="item-input-wrap">
-                      3 Ayo-Oluseun Street, Ipaja Ayobo.
+                      <input type="text" name="" >
                     </div>
                   </div>
                 </li>
 
 
-
-               
+                <li class="item-content item-input">
+						<div class="regStat"></div>
+                </li>
+                <li class="item-content item-input">
+                  <div class="item-inner">
+				        <a href="#" class="col button button-fill">Update</a>
+						
+						
+					</div>
+                </li>
               </ul>
             </div>
 

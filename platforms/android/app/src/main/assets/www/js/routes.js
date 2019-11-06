@@ -8,10 +8,6 @@ routes = [
     url: './pages/load-invoice.html',
   },
   {
-    path: '/active-trip/',
-    url: './pages/active-trip.html',
-  },
-  {
     path: '/pay/',
     url: './pages/pay.html',
   },
@@ -50,6 +46,10 @@ routes = [
   {
     path: '/change-password/',
     url: './pages/change-password.html',
+  },
+  {
+    path: '/update-profile/',
+    url: './pages/update-profile.html',
   },
   {
     path: '/my-profile/',

@@ -79,6 +79,7 @@ function switchv(tohide, toshow){
 	$$(toshow).show();
 }
 
+
 //Function - show updated wallet value
 function updatewall(){
 	var reqst = 'updatewall';
